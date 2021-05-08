@@ -1,4 +1,4 @@
-# Propine Web UI Test Automation Assignment
+# ExpressVPN Web UI Test Automation Assignment
 
 ## Getting Started
 
@@ -12,27 +12,28 @@
 
     ```
     npm install -g typescript
+    ```
 
 ### Installations
 
 1. Install Packages by going to root folder of the project in terminal and running the following:
 
-    ```
-    npm install
-    ```
+```
+npm install
+```
 
 2. Build the typescript project by running the following at root folder of project:
 
-    ```
-    tsc
-    ```
+```
+tsc
+```
 
 ### Running Tests
 
 Make sure your code is build using the following command at root folder:
 
 ```
-    tsc
+tsc
 ```
 
 Run the tests by running following command on terminal:
@@ -41,9 +42,22 @@ Run the tests by running following command on terminal:
 npm run test
 ```
 
+or 
+
+```
+npx wdio run dist/wdio.conf.js
+```
+
+To generate Html report once execution is complete
+
+```
+npm run generateAllureReport
+```
+
 
 ### Note
 Currently these test can be run on local machine , but future implementation will support followng features:
 1. Integration with Jenkins CI/CD pipeline
-2. Run on Docker or Browserstack 
+2. Run on Browserstack or Docker
 3. Support for Mobile browser
+4. Integration with Test management tool like Testrail
