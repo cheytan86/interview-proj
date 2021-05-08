@@ -48,6 +48,12 @@ or
 npx wdio run dist/wdio.conf.js
 ```
 
+Run on browserstack ( have not been tested due to license issue)
+
+```
+npm run browserstackTest
+```
+
 To generate Html report once execution is complete
 
 ```

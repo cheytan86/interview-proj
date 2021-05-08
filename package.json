@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run dist/wdio.conf.js",
-    "generateAllureReport": "allure generate ./allure-results --clean && allure open"
+    "generateAllureReport": "allure generate ./allure-results --clean && allure open",
+    "browserstackTest": "wdio run dist/wdio.confBrowserstack.js"
   },
   "repository": {
     "type": "git",
