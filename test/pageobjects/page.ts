@@ -10,4 +10,12 @@ export default class Page {
     open (path: string) {
         return browser.url(`https://www.expressvpn.com/${path}`)
     }
+
+    wait(seconds: number) {
+        const start = new Date().getTime();
+        let end = start;
+        while(end < start + seconds*1000) {
+            end = new Date().getTime();
+        }
+    }
 }

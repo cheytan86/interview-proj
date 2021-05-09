@@ -67,3 +67,6 @@ Currently these test can be run on local machine , but future implementation wil
 2. Run on Browserstack or Docker
 3. Support for Mobile browser
 4. Integration with Test management tool like Testrail
+5. Parameterization for:
+    a. to run specific test like e2e, ui or localisation.
+    b. to run on a specific browser

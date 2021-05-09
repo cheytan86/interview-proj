@@ -1,14 +1,54 @@
 export const localisationData = {
     Dansk: {
         Title: 'Vælg dit ExpressVPN-abonnement',
-        TitlePara: 'ALLE ABONNEMENTER er dækket af en fuld returret uden besvær de første 30 dage. Start dit abonnement med 3 nemme trin!'
-    },
-    Deutsch: {
-        Title: 'Wählen Sie Ihren ExpressVPN-Tarif',
-        TitlePara: 'Alle Tarife kommen mit einer 100 % Geld-zurück-Garantie für die ersten 30 Tage. Registrieren Sie sich für ein VPN in 3 einfachen Schritten!'
+        TitlePara: 'ALLE ABONNEMENTER er dækket af en fuld returret uden besvær de første 30 dage. Start dit abonnement med 3 nemme trin!',
+        Step1Text: 'Vælg et abonnement, der passer til dig:',
+        Step1Para: 'Alle abonnementer omfatter alle ExpressVPN-apps, 24-timers kundesupport og ubegrænset højhastighedsbåndbredde.',
+        Plan1Tenure: '1 måned',
+        Plan1PerMonth: 'pr. måned',
+        Plan1BillingInfo: 'Du betaler $12,95 hver måned',
+        Plan130Day: '30-dages pengene-tilbage-garanti',
+        Plan1SelectAlert: 'Til information: Et 12-måneders abonnement giver de største besparelser og er fuldt refunderbart i 30 dage.',
+        Plan2Tenure: '12 måneder',
+        Plan2PerMonth: 'pr. måned',
+        Plan2BillingInfo: 'Du betaler $99,95 hver 12. måned.',
+        Plan230Day: '30-dages pengene-tilbage-garanti',
+        Plan3Tenure: '6 måneder',
+        Plan3PerMonth: 'pr. måned',
+        Plan3BillingInfo: 'Du betaler $59,95 hver 6. måned.',
+        Plan330Day: '30-dages pengene-tilbage-garanti',
+        Step2Text: 'Indtast din e-mailadresse:',
+        Step2Para: 'Privatlivsgaranti: Vi deler ikke dine oplysninger, og vi kontakter dig kun i det omfang, der er nødvendigt for at kunne levere vores tjeneste.',
+        Step3Text: 'Vælg din foretrukne betalingsmetode:'
+
     },
     Espanol: {
         Title: 'Elija su plan de ExpressVPN',
-        TitlePara: 'TODOS LOS PLANES incluyen una Garantía de devolución de dinero al 100% durante sus primeros 30 días de servicio. ¡Obtenga una VPN en 3 sencillos pasos!'
-    }
+        TitlePara: 'TODOS LOS PLANES incluyen una Garantía de devolución de dinero al 100% durante sus primeros 30 días de servicio. ¡Obtenga una VPN en 3 sencillos pasos!',
+        Step1Text: 'Seleccione el plan que más le convenga:',
+        Step1Para: 'Todos los planes incluyen todas las aplicaciones de ExpressVPN, soporte técnico 24/7 y ancho de banda ilimitado de alta velocidad.',
+        Plan1Tenure: '1 Mes',
+        Plan1PerMonth: 'al mes',
+        Plan1BillingInfo: '$12,95 facturados cada mes.',
+        Plan130Day: 'Garantía de devolución de dinero a 30 días.',
+        Plan1SelectAlert: 'Importante: El plan de 12 meses ofrece el mayor ahorro, y es totalmente reembolsable a 30 días.',
+        Plan2Tenure: '12 Meses',
+        Plan2PerMonth: 'al mes',
+        Plan2BillingInfo: '$99,95 facturados cada 12 meses.',
+        Plan230Day: 'Garantía de devolución de dinero a 30 días.',
+        Plan3Tenure: '6 Meses',
+        Plan3PerMonth: 'al mes',
+        Plan3BillingInfo: '$59,95 facturados cada 6 meses.',
+        Plan330Day: 'Garantía de devolución de dinero a 30 días.',
+        Step2Text: 'Introduzca su dirección de correo electrónico:',
+        Step2Para: 'Garantía de privacidad: no compartimos su información y solamente le contactaremos en relación a nuestro servicio.',
+        Step3Text: 'Seleccione su método de pago preferido:'
+    },
+    Deutsch: {
+        Title: 'Wählen Sie Ihren ExpressVPN-Tarif',
+        TitlePara: 'Alle Tarife kommen mit einer 100 % Geld-zurück-Garantie für die ersten 30 Tage. Registrieren Sie sich für ein VPN in 3 einfachen Schritten!',
+        Step1Text: 'Wählen Sie einen für Sie passenden Tarif:',
+        Step1Para: 'Alle Abonnements umfassen ExpressVPN-Apps, Support rund um die Uhr und unbegrenzte Bandbreite mit Höchstgeschwindigkeit.',
+        Plan1Tenure: '1 Monat'
+    },
 }
