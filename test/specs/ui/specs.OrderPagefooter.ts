@@ -13,6 +13,6 @@ describe('My Login application', async () => {
         await (await VPNMacPage.buttonDownload).waitForDisplayed({timeout: 5000});
         expect(browser).toHaveUrl('https://www.expressvpn.com/vpn-software/vpn-mac');
         expect(await VPNMacPage.labelTitle).toHaveTextContaining('Download ExpressVPN, the best VPN for Mac');
-        expect(true).toEqual(false);
+        // expect(true).toEqual(false);
     });
 });

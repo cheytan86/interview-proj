@@ -12,13 +12,11 @@ describe('Localisation Tests for Order Page', async () => {
     // })
 
     it('Verify Text displayed on the page when user changes language to Espanol', async () => {
-        await (await OrderPage.linkFooterVPNMac).click();
         await OrderPage.selectLanguage('Español');
         await OrderPage.localisationValidation(localisationData.Espanol);
     });
 
     it('Verify Text displayed on the page when user changes language to Dansk', async () => {
-        (await OrderPage.linkFooterVPNMac).click();
         await OrderPage.selectLanguage('Dansk');
         await OrderPage.localisationValidation(localisationData.Dansk);
     });
