@@ -36,7 +36,7 @@ Make sure your code is build using the following command at root folder:
 tsc
 ```
 
-1. Run the tests locally by running following command on terminal:
+#### Run the tests locally by running following command on terminal:
 
 ```
 npm run test
@@ -48,9 +48,13 @@ or
 npx wdio run dist/wdio.conf.js
 ```
 
-2. Run on Docker (install docker if not installed from link : https://www.docker.com/)
+#### Run on Docker (install docker if not installed from link : https://www.docker.com/)
+
 To start docker at root folder of the repo run the following command in terminal:
+
+```
 docker-compose up
+```
 
 Run the tests by running following command on terminal:
 
@@ -63,14 +67,14 @@ To stop Docker instance
 docker-compose down
 ```
 
-3. Run on browserstack ( have not been tested due to license issue)
+#### Run on browserstack ( have not been tested due to license issue)
 
 ```
 npm run browserstackTest
 ```
 ### Generate Html Report using Allure
 
-To generate Html report once execution is complete
+To generate Html report once execution is complete, run followin command on terminal:
 
 ```
 npm run generateAllureReport
