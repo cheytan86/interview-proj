@@ -36,7 +36,7 @@ Make sure your code is build using the following command at root folder:
 tsc
 ```
 
-Run the tests by running following command on terminal:
+1. Run the tests locally by running following command on terminal:
 
 ```
 npm run test
@@ -48,11 +48,27 @@ or
 npx wdio run dist/wdio.conf.js
 ```
 
-Run on browserstack ( have not been tested due to license issue)
+2. Run on Docker (install docker if not installed from link : https://www.docker.com/)
+To start docker at root folder of the repo run the following command in terminal:
+docker-compose up
+
+Run the tests by running following command on terminal:
+
+```
+npm run test
+```
+
+To stop Docker instance
+```
+docker-compose down
+```
+
+3. Run on browserstack ( have not been tested due to license issue)
 
 ```
 npm run browserstackTest
 ```
+### Generate Html Report using Allure
 
 To generate Html report once execution is complete
 
@@ -64,7 +80,7 @@ npm run generateAllureReport
 ### Note
 Currently these test can be run on local machine , but future implementation will support followng features:
 1. Integration with Jenkins CI/CD pipeline
-2. Run on Browserstack or Docker
+2. Run on Browserstack 
 3. Support for Mobile browser
 4. Integration with Test management tool like Testrail
 5. Parameterization for:

@@ -5,6 +5,7 @@ describe('Localisation Tests for Order Page', async () => {
 
     beforeEach(async () => {
         await OrderPage.open('order');
+        // await browser.maximizeWindow();
     });
 
     // after(async ()=> {

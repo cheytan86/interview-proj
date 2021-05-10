@@ -1,0 +1,47 @@
+# To execute this docker-compose yml file use `docker-compose -f <file_name> up`
+# Add the `-d` flag at the end for detached execution
+# use version 2 if version 3 fails to start :3.141.59-20200409
+version: '3'
+services:
+  chrome:
+    image: selenium/node-chrome-debug
+    depends_on:
+      - hub
+    environment:
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
+      NODE_MAX_SESSION: 2
+      NODE_MAX_INSTANCES: 2
+      SCREEN_WIDTH: 1920
+    volumes:
+      - /dev/shm:/dev/shm
+    ports: 
+      - "9003:5900"
+    links:
+      - hub
+  firefox:
+    image: selenium/node-firefox-debug
+    depends_on:
+      - hub
+    environment:
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
+      NODE_MAX_SESSION: 2
+      NODE_MAX_INSTANCES: 2
+      SCREEN_WIDTH: 1920
+    volumes:
+      - /dev/shm:/dev/shm
+    ports: 
+      - "9002:5900"
+    links:
+      - hub
+
+  hub:
+    image: selenium/hub
+    ports:
+      - "4444:4444"
+    environment:
+      GRID_MAX_SESSION: 8
+      GRID_BROWSER_TIMEOUT: 300
+      GRID_TIMEOUT: 300
+    

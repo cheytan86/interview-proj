@@ -8,7 +8,9 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path: string) {
-        return browser.url(`https://www.expressvpn.com/${path}`)
+        // return browser.url(`https://www.expressvpn.com/${path}`)
+        browser.maximizeWindow();
+        return browser.url(`https://www.expressvpn.com/${path}`);
     }
 
     wait(seconds: number) {
